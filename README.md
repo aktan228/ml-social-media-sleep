@@ -41,3 +41,35 @@ Notebook: notebooks/04_used_cars_regression.ipynb.
 Предобработка взята из ПР-3.
 
 ## Архивное описание предыдущей темы
+
+# Практическая работа № 6. Классификация текстов
+
+ФИО: Кашымбеков Актан Ийгиликович.
+
+Уровень C.
+
+Тема: классификация тематик новостей на кыргызском языке.
+
+Источник:
+https://github.com/alexeyev/kyrgyz-multi-label-topic-classification
+
+Файлы:
+- data/raw/qad-train_1000.csv
+- data/raw/qad-test_0500.csv
+
+Notebook:
+notebooks/06_kyrgyz_news_classification.ipynb
+
+Для учебной задачи используются новости с одной меткой
+из классов с минимум 20 документами после удаления дубликатов.
+
+Предобработка включает нормализацию Unicode, нижний регистр,
+удаление URL, пунктуации, цифр и ручного списка кыргызских стоп-слов.
+
+Векторизация: TF-IDF.
+
+Сравниваемые алгоритмы:
+MultinomialNB и LogisticRegression.
+
+Метрики:
+accuracy, macro-F1 и weighted-F1.
